@@ -1,0 +1,53 @@
+//Write a program to reverse a list of given numbers.
+#include<stdio.h>
+
+int stk[10];
+int top=-1;
+int pop();
+void push(int);
+int main() 
+{
+    int val, n, i,
+    arr[10];
+    printf("\n Enter the numbers of elements in the array : ");
+    scanf("%d",&n);
+    printf("\n Enter the of the array : ");
+    for(i=0;i<n;i++)
+        scanf("%d",&arr[i]);
+    for(i=0;i<n;i++)
+        push(arr[i]);
+    for(i=0;i<n;i++)
+    {
+        val = pop();
+        arr[i] = val;
+    }
+    printf("\n The reverse array is : ");
+    for(i=0;i<n;i++)
+        printf("\n %d", arr[i]);
+    return 0;
+}
+void push(int val)
+{
+    stk[++top] = val;
+}
+int pop()
+{
+    return(stk[top--]);
+}
+
+Output : 
+
+Enter the numbers of elements in the array : 5
+
+ Enter the of the array : 11
+22
+33
+44
+55
+
+ The reverse array is : 
+ 55
+ 44
+ 33
+ 22
+ 11

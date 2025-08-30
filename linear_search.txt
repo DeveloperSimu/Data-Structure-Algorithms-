@@ -1,0 +1,128 @@
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+#define size 20
+
+int arr[size],num,i,n,found=0,pos=-1;
+void insert();
+void linear_search();
+int main()
+{
+	insert();
+	linear_search();
+	getch();
+	return 0;
+}
+void insert()
+{
+	printf("\n Enter the number of element an array : ");
+	scanf("%d",&n);
+	printf("\n Enter the elements :");
+	for(i=0; i<n; i++)
+		{
+			scanf("%d",&arr[i]);
+		}
+}
+
+void linear_search()
+{
+	printf("\n Enter the number thst has to be searched:");
+	scanf("%d",&num);
+	for(i=0; i<n; i++)
+		{	printf("\n......compare %d with %d",arr[i],num);
+			if(arr[i]==num)
+				{
+					found=1;
+					pos=i;
+					printf("\n %d is found in array at position=%d",num ,i+1);
+					break;
+				}
+		}
+	if(found==0)
+		printf("\n %d does not exist in the array",num);
+}
+
+// any one 
+
+Output  (1) :
+
+
+Enter the number of element an array : 15
+
+ Enter the elements :52
+25
+63
+36
+96
+69
+85
+45
+65
+12
+32
+78
+87
+49
+94
+
+ Enter the number thst has to be searched:87
+
+......compare 52 with 87
+......compare 25 with 87
+......compare 63 with 87
+......compare 36 with 87
+......compare 96 with 87
+......compare 69 with 87
+......compare 85 with 87
+......compare 45 with 87
+......compare 65 with 87
+......compare 12 with 87
+......compare 32 with 87
+......compare 78 with 87
+......compare 87 with 87
+ 87 is found in array at position=13
+
+Output  (2) :
+
+Enter the number of element an array : 10
+
+ Enter the elements :21
+26
+63
+59
+96
+85
+45
+55
+65
+85
+
+ Enter the number thst has to be searched:85
+
+......compare 21 with 85
+......compare 26 with 85
+......compare 63 with 85
+......compare 59 with 85
+......compare 96 with 85
+......compare 85 with 85
+ 85 is found in array at position=6
+
+
+Output (3) :
+
+ Enter the number of element an array : 10
+
+ Enter the elements :54 85 78 95 65 25 45 63 59 92 73 75 62
+
+ Enter the number thst has to be searched:
+......compare 54 with 73
+......compare 85 with 73
+......compare 78 with 73
+......compare 95 with 73
+......compare 65 with 73
+......compare 25 with 73
+......compare 45 with 73
+......compare 63 with 73
+......compare 59 with 73
+......compare 92 with 73
+ 73 does not exist in the array

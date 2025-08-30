@@ -1,0 +1,92 @@
+#include<stdio.h>
+
+void Add();
+
+int main()
+{
+    Add();
+    Sub();
+    Multi();
+    Div();
+    return 0;
+}
+void Add()
+{
+    int x,y,sum;
+    //x=10;
+    //y=5;
+    printf("\n ****ADDITION****");
+    printf("\n Enter the value of x :");
+    scanf("%d",&x);
+    printf("\n Enter the value of y :");
+    scanf("%d",&y);
+    sum=x+y;
+    printf("\n Addition of two numbers=%d",sum);
+}
+
+void Sub()
+{
+    int x,y,Sub;
+    //x=10;
+    //y=5;
+    printf("\n\n\n ****SUBTRACTION****");
+    printf("\n Enter the value of x :");
+    scanf("%d",&x);
+    printf("\n Enter the value of y :");
+    scanf("%d",&y);
+    Sub=x-y;
+    printf("\n Subtraction of two numbers=%d",Sub);
+}
+
+void Multi()
+{
+    int x,y,Multi;
+    //x=10;
+    //y=5;
+    printf("\n\n\n ****MULTIPLICATION****");
+    printf("\n Enter the value of x :");
+    scanf("%d",&x);
+    printf("\n Enter the value of y :");
+    scanf("%d",&y);
+    Multi=x*y;
+    printf("\n Multiplication of two numbers=%d",Multi);
+}
+
+void Div()
+{
+    int x,y,Div;
+    //x=10;
+    //y=5;
+    printf("\n\n\n ****DIVISION****");
+    printf("\n Enter the value of x :");
+    scanf("%d",&x);
+    printf("\n Enter the value of y :");
+    scanf("%d",&y);
+    Div=x/y;
+    printf("\n Division of two numbers=%d",Div);
+}
+
+Output : 
+
+****ADDITION****
+ Enter the value of x :10
+ Enter the value of y :5
+ Addition of two numbers=15
+
+
+ ****SUBTRACTION****
+ Enter the value of x :20
+ Enter the value of y :5
+ Subtraction of two numbers=15
+
+
+ ****MULTIPLICATION****
+ Enter the value of x :20
+ Enter the value of y :3
+ Multiplication of two numbers=60
+
+
+ ****DIVISION****
+ Enter the value of x :45
+ Enter the value of y :5
+ Division of two numbers=9
